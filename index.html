@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le meilleur site de Voiture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon">&#9776;</div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#magazine">MAGAZINE</a></li>
+            </ul>
+            <div class="right-nav">
+                <div class="cart-icon">&#128722;</div>
+                <div class="login-button">LOGIN</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <div class="search-icon">&#9758;</div>
+            <input type="text" placeholder="rechercher.." id="search-input">
+        </div>
+
+        <div class="sort-dropdown">
+            <select id="sort-select">
+                <option value="best-match">Best match</option>
+                <option value="price-low-high">Prix:plus bas au plus haut</option>
+                <option value="price-high-low">Prix:plus haut au plus bas</option>
+                <option value="name">Par nom</option>
+                
+            </select>
+        </div>
+
+       <div class="content-wrapper">
+    <aside class="filters">
+        <h3>FILTER BY</h3>
+        <div class="filter-category">
+            <h4>Collection</h4>
+            <select>
+                <option value="">Select collection</option>
+                <option value="296">296</option>
+                <option value="12 Clindri">12 Clindri</option>
+                <option value="Roma">Roma</option>
+                <option value="812">812</option>
+                <option value="Purosangue">Purosangue</option>
+            </select>
+        </div>
+        <div class="filter-category">
+            <h4>Color</h4>
+            <select>
+                <option value="">Select color</option>
+                <option value="Bleu">Bleu</option>
+                <option value="Rouge">Rouge</option>
+                <option value="Grise">Grise</option>
+                <option value="Verte">Verte</option>
+            </select>
+        </div>
+        <div class="filter-category">
+            <h4>Category</h4>
+            <select>
+                <option value="">Select category</option>
+                <option value="Spider">Spider</option>
+                <option value="SUV">SUV</option>
+                <option value="Classic">Classic</option>
+                <option value="GTB">GTB</option>
+                <option value="GTS">GTS</option>
+                <option value="Competizione">Competizione</option>
+            </select>
+        </div>
+        <div class="filter-category">
+            <h4>Price Range</h4>
+            <div class="price-range">
+                <span>200,000$</span>
+                <input type="range" min="0" max="10000" id="price-range">
+                <span>1000,000$+</span>
+            </div>
+        </div>
+    </aside>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="1.Avif" alt="Coombes">
+            <h3>SF90</h3>
+            <p class="category">Spider</p>
+            <p class="price">423,000$</p>
+            <div class="rating">✪✪✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="2.Avif" alt="Coombes">
+            <h3>296</h3>
+            <p class="category">GTB</p>
+            <p class="price">315,000$</p>
+            <div class="rating">✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="3.Avif" alt="Coombes">
+            <h3>296</h3>
+            <p class="category">GTS</p>
+            <p class="price">320,000$</p>
+            <div class="rating">✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="4.Avif" alt="Coombes">
+            <h3>12 Cilindri</h3>
+            <p class="category">Classic</p>
+            <p class="price">387,000$</p>
+            <div class="rating">✪✪✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="5.Avif" alt="Coombes">
+            <h3>12 Cilindri</h3>
+            <p class="category">Spider</p>
+            <p class="price">427,000$</p>
+            <div class="rating">✪✪✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="6.Avif" alt="Coombes">
+            <h3>Purosangue</h3>
+            <p class="category">SUV</p>
+            <p class="price">384,000$</p>
+            <div class="rating">✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="7.Avif" alt="Coombes">
+            <h3>Roma</h3>
+            <p class="category">Classic</p>
+            <p class="price">246,000$</p>
+            <div class="rating">✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="8.Avif" alt="Coombes">
+            <h3>Roma</h3>
+            <p class="category">Spider</p>
+            <p class="price">255,000$</p>
+            <div class="rating">✪✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+
+        <div class="product-item">
+            <img src="10.Avif" alt="Coombes">
+            <h3>812</h3>
+            <p class="category">Competizione</p>
+            <p class="price">491,000$</p>
+            <div class="rating">✪✪✪✪✪</div>
+            <button class="add-to-cart">&#128230;</button>
+        </div>
+    </div>
+</div>
+
+            </section>
+        </div>
+
+        <div class="pagination">
+            <button class="page-number active">1</button>
+            <button class="page-number">2</button>
+            <button class="page-number">3</button>
+            <button class="page-number">4</button>
+            <button class="page-number">5</button>
+            <button class="page-number">6</button>
+            <button class="page-number">7</button>
+            <button class="page-number">8</button>
+            <button class="page-number">9</button>
+            <button class="page-number">10</button>
+            <button class="next-page">></button>
+        </div>
+    </main>
+
+    <script src="projet.js"></script>
+</body>
+</html>
