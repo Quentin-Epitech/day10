@@ -10,21 +10,21 @@ const products = [
     { id: 9, name: "812", category: "Competizione", price: 491000, rating: 5 }];
 
 function displayProducts(productsToShow) {
-    const productGrid = document.querySelector('.product-grid');
+    const productGrid = document.querySelector('.produit');
     productGrid.innerHTML = '';
 
     productsToShow.forEach(product => {
         const stars = '✪'.repeat(product.rating);
 
         const productElement = document.createElement('div');
-        productElement.className = 'product-item';
+        productElement.className = 'annonce';
         productElement.innerHTML = 
     '<img src="' + product.id + '.Avif" alt="' + product.name + '">' +
     '<h3>' + product.name + '</h3>' +
     '<p class="category">' + product.category + '</p>' +
     '<p class="price">$' + product.price.toLocaleString() + '</p>' +
     '<div class="rating">' + stars + '</div>' +
-    '<button class="add-to-cart">&#128230;</button>';
+    '<i class="fa-solid fa-cart-shopping"></i>';
         productGrid.appendChild(productElement);});}
 
         function searchProducts() {
@@ -39,3 +39,4 @@ function displayProducts(productsToShow) {
 
 document.getElementById('search-input').addEventListener('input', searchProducts);
 displayProducts(products);
+
