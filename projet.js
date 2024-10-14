@@ -40,3 +40,4 @@ function displayProducts(productsToShow) {
 document.getElementById('search-input').addEventListener('input', searchProducts);
 displayProducts(products);
 
+
